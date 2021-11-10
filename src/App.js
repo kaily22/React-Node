@@ -1,25 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import { render } from "@testing-library/react";
+import React ,{Component}from "react";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends Component {
+
+  render() {
+
+    const summary = '사용자가 UI를 효과적으로 구축하기 위해 사용하는  자바스크립트 기반의 라이브러리';
+    return (
+      <form>
+        <h2>리액트란?</h2>
+        <div>{summary}</div>
+      </form>
+    );
+  }
+
 }
 
 export default App;
