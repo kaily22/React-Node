@@ -1,5 +1,6 @@
-import { render } from "@testing-library/react";
+/* 
 import React ,{Component}from "react";
+
 
 class App extends Component {
 
@@ -14,6 +15,33 @@ class App extends Component {
     );
   }
 
+} */
+
+/*props 실습 */
+
+// import React, { Component } from "react"; 
+// import Payment from './Payment';
+// import Wrapper from "./Wrapper";
+
+// class App extends Component {
+//   render() {
+//     return (
+//         <Wrapper>
+//           <Payment amount="56000원" color="red" isSpecial={true} />  {/*자식컴포넌트 props_name="props_value"/> */}
+//         </Wrapper>
+//         );
+//   }
+// }
+//export default App;
+
+/* input 상태 관리하기 */
+import React from 'react';
+import InputSample from './InputSample';
+
+function App() {
+  return(
+    <InputSample />
+  );
 }
 
 export default App;
